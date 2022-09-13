@@ -3,8 +3,17 @@
 import React from "react";
 
 class MyComponent extends React.Component {
+  state = {
+    name: "Hary Magai",
+    address: "Nam Dinh",
+    age: 26,
+  };
   render() {
-    return <div>my first component</div>;
+    return (
+      <div>
+        My Name is {this.state.name} and i am from {this.state.address}
+      </div>
+    );
   }
 }
 export default MyComponent;
